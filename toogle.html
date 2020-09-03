@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About jQuery</title>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(document).ready(function( ) {
+$("button").click(function( ) {
+$("p").toggle();
+});
+$("div").click(function( ) {
+$("div").dblclick();
+});
+$("#b1").click(function( ) {
+$(".p1").fadeOut( "slow");
+$(".p2").fadeOut( "slow");
+});
+$("#b2").click(function( ) {
+$(".p1").fadeIn( "slow");
+$(".p2").fadeIn("slow" );
+});
+});
+
+</script>
+<style>
+div{
+display:block;
+width:470px;
+padding:10px;
+font-size:25px;
+border:2px solid aqua;
+}
+</style>
+</head>
+<body>
+<div ondblclick="alert('dblclick is done')">Hello World Welcome ! !</div>
+<p>programming in JQuery</p>
+<button>Hide or Show</button>
+</br></br>
+<button id="b1">fadeOut</button>
+<button id="b2">fadeIn</button>
+<p class="p1">Hello World Welcome !</p>
+<p class="p2">To JQuery Programming</p>
+</body>
+</html>
